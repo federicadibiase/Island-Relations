@@ -1,4 +1,3 @@
-```css
 :root {
   /* COLOR PALETTE */
   --blue-dark: #00073f;
@@ -20,7 +19,6 @@
   --radius: 6px;
 }
 
-
 /* =========================
    RESET
    ========================= */
@@ -41,7 +39,6 @@ body {
   font-weight: 400;
   line-height: 1.65;
 }
-
 
 /* =========================
    HEADER / NAVIGATION
@@ -112,27 +109,17 @@ body {
   width: 100%;
 }
 
-
 /* =========================
    HERO
    ========================= */
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 380px;
-  align-items: end;
-  gap: 5rem;
-
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 7rem 2rem 8rem;
 
   background: var(--blue-dark);
   color: var(--white);
-}
-
-.hero-main {
-  min-width: 0;
 }
 
 .hero-kicker {
@@ -175,26 +162,6 @@ body {
   opacity: 0.85;
 }
 
-.hero-intro {
-  align-self: end;
-
-  padding: 1.5rem 1.75rem;
-
-  border: 1px solid rgba(255, 255, 255, 0.25);
-
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6;
-
-  opacity: 0.9;
-}
-
-.hero-intro p {
-  margin: 0;
-}
-
-
 /* =========================
    MAIN CONTENT
    ========================= */
@@ -235,7 +202,6 @@ h2 {
   font-weight: 400;
   line-height: 1.7;
 }
-
 
 /* =========================
    THREE FEATURE BOXES
@@ -285,7 +251,6 @@ h2 {
   line-height: 1.65;
 }
 
-
 /* Individual colours */
 
 .zone-cyprus {
@@ -302,7 +267,6 @@ h2 {
   background: var(--blue-bright);
   color: var(--white);
 }
-
 
 /* =========================
    QUOTE
@@ -323,7 +287,6 @@ h2 {
   font-style: italic;
   line-height: 1.5;
 }
-
 
 /* =========================
    CREDITS / FOOTER
@@ -358,6 +321,59 @@ h2 {
   opacity: 0.65;
 }
 
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    padding: 5rem 2rem 6rem;
+  }
+
+  .zone-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .zone {
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .nav {
+    padding: 1.25rem 1.25rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: 0 1.25rem;
+  }
+
+  .hero {
+    padding: 4rem 1.25rem 5rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  .zone {
+    padding: 1.75rem;
+  }
+
+  .sample-quote {
+    padding-left: 1.25rem;
+  }
+
+}
 
 /* =========================
    DATE & LOCATION
@@ -457,30 +473,6 @@ h2 {
    RESPONSIVE
    ========================= */
 
-@media (max-width: 900px) {
-
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-
-    padding: 5rem 2rem 6rem;
-  }
-
-  .hero-intro {
-    max-width: 600px;
-  }
-
-  .zone-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .zone {
-    min-height: auto;
-  }
-
-}
-
-
 @media (max-width: 780px) {
 
   .event-details {
@@ -502,43 +494,3 @@ h2 {
   }
 
 }
-
-
-@media (max-width: 650px) {
-
-  .nav {
-    padding: 1.25rem 1.25rem;
-  }
-
-  .nav-links {
-    width: 100%;
-    gap: 1.25rem;
-    flex-wrap: wrap;
-  }
-
-  main {
-    padding: 0 1.25rem;
-  }
-
-  .hero {
-    padding: 4rem 1.25rem 5rem;
-  }
-
-  .hero-sub {
-    white-space: normal;
-  }
-
-  section {
-    padding: 4rem 0;
-  }
-
-  .zone {
-    padding: 1.75rem;
-  }
-
-  .sample-quote {
-    padding-left: 1.25rem;
-  }
-
-}
-```
