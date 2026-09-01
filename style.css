@@ -148,7 +148,7 @@ body {
 }
 
 .hero-sub {
-  max-width: 700px;
+  max-width: none;
 
   margin: 0;
 
@@ -157,6 +157,7 @@ body {
   font-weight: 400;
   line-height: 1.65;
 
+  white-space: nowrap;
   opacity: 0.85;
 }
 
