@@ -38,6 +38,7 @@ color: var(--text);
 font-family: var(--font-body);
 font-weight: 400;
 line-height: 1.65;
+overflow-x: hidden; /* evita la scrollbar orizzontale creata dal full-bleed dell'hero */
 }
 
 /* =========================
@@ -114,12 +115,18 @@ width: 100%;
   ========================= */
 
 .hero {
+position: relative; /* necessario per posizionare .hero-credit */
+
 max-width: var(--max-width);
 margin: 0 auto;
 padding: 7rem 2rem 8rem;
 
 background: var(--blue-dark);
 color: var(--white);
+
+/* estende lo sfondo blu a tutta la larghezza dello schermo */
+box-shadow: 0 0 0 100vmax var(--blue-dark);
+clip-path: inset(0 -100vmax);
 }
 
 .hero-kicker {
@@ -160,6 +167,42 @@ line-height: 1.65;
 
 white-space: nowrap;
 opacity: 0.85;
+}
+
+/* =========================
+  HERO CREDIT BOX
+  ========================= */
+
+.hero-credit {
+position: absolute;
+top: 7rem;
+right: 2rem;
+
+max-width: 320px;
+padding: 1.5rem 1.75rem;
+
+border: 1px solid rgba(255, 255, 255, 0.35);
+border-radius: var(--radius);
+background: rgba(255, 255, 255, 0.06);
+}
+
+.hero-credit-names {
+margin: 0 0 0.75rem;
+
+font-family: var(--font-title);
+font-size: 0.85rem;
+font-weight: 900;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+}
+
+.hero-credit-text {
+margin: 0;
+
+font-family: var(--font-body);
+font-size: 0.95rem;
+line-height: 1.6;
+opacity: 0.9;
 }
 
 /* =========================
@@ -329,6 +372,12 @@ opacity: 0.65;
 
 .hero {
 padding: 5rem 2rem 6rem;
+}
+
+.hero-credit {
+position: static;
+margin-top: 2rem;
+max-width: none;
 }
 
 .zone-grid {
