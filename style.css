@@ -207,6 +207,38 @@ opacity: 0.85;
   }
 }
 
+.hero-credit {
+position: absolute;
+top: 7rem;
+right: 2rem;
+
+max-width: 320px;
+padding: 1.5rem 1.75rem;
+
+border: 1px solid rgba(255, 255, 255, 0.35);
+border-radius: var(--radius);
+background: rgba(255, 255, 255, 0.06);
+}
+
+.hero-credit-names {
+margin: 0 0 0.75rem;
+
+font-family: var(--font-title);
+font-size: 0.85rem;
+font-weight: 900;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+}
+
+.hero-credit-text {
+margin: 0;
+
+font-family: var(--font-body);
+font-size: 0.95rem;
+line-height: 1.6;
+opacity: 0.9;
+}
+
 /* =========================
   MAIN CONTENT
   ========================= */
