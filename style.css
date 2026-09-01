@@ -38,7 +38,7 @@ color: var(--text);
 font-family: var(--font-body);
 font-weight: 400;
 line-height: 1.65;
-overflow-x: hidden; /* evita la scrollbar orizzontale creata dal full-bleed dell'hero */
+overflow-x: hidden; //
 }
 
 /* =========================
@@ -124,9 +124,9 @@ padding: 7rem 2rem 8rem;
 background: var(--blue-dark);
 color: var(--white);
 
-/* estende lo sfondo blu a tutta la larghezza dello schermo */
 box-shadow: 0 0 0 100vmax var(--blue-dark);
-clip-path: inset(0 -100vmax);
+  clip-path: inset(0 -100vmax);
+  
 }
 
 .hero-kicker {
