@@ -148,6 +148,7 @@ body {
 }
 
 .hero-sub {
+  width: max-content;
   max-width: none;
 
   margin: 0;
