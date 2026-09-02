@@ -48,6 +48,9 @@ overflow-x: hidden;
 .site-header {
 background: var(--blue-dark);
 color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav {
