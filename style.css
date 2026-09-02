@@ -575,3 +575,14 @@ max-height: 55px;
 }
 
 }
+body {
+  /* Compensa l'altezza dell'header fisso su desktop */
+  padding-top: 80px;
+}
+
+@media (max-width: 650px) {
+  body {
+    /* Aumenta lo spazio su mobile dove i link della nav vanno a capo */
+    padding-top: 110px;
+  }
+}
