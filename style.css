@@ -548,40 +548,39 @@ max-height: 55px;
 
 @media (max-width: 650px) {
 
-html {
-  /* Su schermi piccoli l'header occuperà più spazio verticale */
-  scroll-padding-top: 140px; 
-}
+  html {
+    scroll-padding-top: 100px; 
+  }
 
-.nav {
-padding: 1.25rem 1.25rem;
-}
+  .nav {
+    padding: 1.25rem 1.25rem;
+  }
 
-.nav-links {
-width: 100%;
-gap: 1.25rem;
-flex-wrap: wrap;
-}
+  .nav-links {
+    width: 100%;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
 
-main {
-padding: 0 1.25rem;
-}
+  main {
+    padding: 0 1.25rem;
+  }
 
-.hero {
-/* Spazio superiore generoso per liberare il testo kicker dall'header a due righe su mobile */
-padding: 14rem 1.25rem 5rem;
-}
+  .hero {
+    /* Ridotto il padding superiore da 14rem a 8.5rem per avvicinare il testo all'header */
+    padding: 8.5rem 1.25rem 4rem;
+  }
 
-section {
-padding: 4rem 0;
-}
+  section {
+    padding: 4rem 0;
+  }
 
-.zone {
-padding: 1.75rem;
-}
+  .zone {
+    padding: 1.75rem;
+  }
 
-.sample-quote {
-padding-left: 1.25rem;
-}
+  .sample-quote {
+    padding-left: 1.25rem;
+  }
 
 }
