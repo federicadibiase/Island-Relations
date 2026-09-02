@@ -167,7 +167,18 @@ text-transform: uppercase;
   white-space: normal;
 }
 
-/* DESKTOP (sopra i 768px): Ripristina esattamente la tua regola su una sola riga */
+/* Gestione del <br> per il mobile */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: inline;
+  }
+}
+
+/* DESKTOP (sopra i 768px): Ripristina esattamente la riga unica */
 @media (min-width: 769px) {
   .hero-sub {
     width: max-content;
