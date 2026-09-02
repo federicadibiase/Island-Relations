@@ -69,12 +69,19 @@ margin: 0 auto;
 padding: 1.5rem 2rem;
 }
 
-.nav-title {
-font-family: var(--font-title);
-font-size: 1.05rem;
-font-weight: 900;
-text-transform: uppercase;
-letter-spacing: 0.04em;
+.nav-title,
+.nav-title:visited,
+.nav-title:active,
+.nav-title:hover {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  color: var(--white) !important;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 .nav-links {
